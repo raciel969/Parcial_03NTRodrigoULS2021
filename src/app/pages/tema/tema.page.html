@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Ajustes</ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button menu="main-menu"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-icon slot="start" name="moon"></ion-icon>
+            <ion-label>Cambiar tema oscuro</ion-label>
+            <ion-toggle slot="end" [ngModel]="darkMode" (ionChange)="cambio()"></ion-toggle>
+        </ion-item>
+    </ion-list>
+</ion-content>
